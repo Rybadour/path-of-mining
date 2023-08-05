@@ -1,0 +1,45 @@
+.options-modal {
+  width: 100%;
+
+  h3:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  label {
+    input {
+      margin-left: 10px;
+    }
+  }
+
+  .import, .export {
+    input {
+      margin-right: 10px;
+    }
+  }
+  .export {
+    margin-top: 10px;
+    position: relative;
+
+    .clipboard-badge {
+      margin-left: 10px;
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 5px;
+      padding: 5px 10px;
+      opacity: 0;
+
+      &.show {
+        opacity: 1;
+      }
+    }
+  }
+
+  .save-buttons {
+    display: flex;
+    grid-gap: 20px;
+
+    button {
+      width: 100px;
+      height: 40px;
+    }
+  }
+}
